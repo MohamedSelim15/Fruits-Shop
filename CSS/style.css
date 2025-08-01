@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+}
+.top-img{
+    background-image: url(../images/mAP.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+@media (width<1000px) {
+  div.top-img {
+    background-position: right;
+  }
+}
+
+@media (width<600px) {
+    header .logo{
+        display: none;
+    }
+}
+
+
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    width: 7px;
+    background-color: green;
+    border-radius: 2px;
+}
+
+.content{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    margin-left: 10%;
+    margin-top: 30px;
+
+    h2{
+        font-size: 40px;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    h1{
+        color: orange;
+        font-size: 70px;
+        font-weight: 100;
+        margin: 30px 0;
+        text-shadow: 0 0 100px orange;
+    }
+
+    p{
+        color: black;
+        text-transform: uppercase;
+    }
+    button{
+        margin-top: 100px;
+        height: 60px;
+        width: 170px;
+        border:none;
+        background-color: orange;
+        color: white;
+        border-radius: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3 ease;
+        text-align: center;
+    }
+
+    
+}
+
+
+
+section{
+    margin-top: 60px;
+    box-shadow: 0 -150px 80px 80px white;
+    background-color: white;
+    
+    .title{
+        justify-content: space-around;
+        margin-bottom: 30px;
+        margin-top: 20px;
+
+    button{
+        width: 100px;
+        height: 40px;
+        background-color: green;
+        padding: 5px;
+        color: white;
+        text-align: center;
+        border-radius: 40px;
+        /* font-size: 20px; */
+        text-transform: uppercase;
+
+    }
+}
+
+    .products{
+        margin-inline: 10px;
+        background-color: white;
+
+        div{
+            /* background-color: #eee; */
+            margin-inline: auto;
+            border-radius: 10px;
+            text-align: center;
+
+            img{
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+
+        }
+
+        .item1{
+            cursor: pointer;
+            background-color: #f2b7051e;
+        }
+        .item1:hover{
+            background-color: #f2b70545 ;
+
+        }
+        .item2{
+            cursor: pointer;
+            background-color: #04ff001e;
+        }
+        .item2:hover{
+            background-color: #03b3001e ;
+
+        }
+        .item3{
+            cursor: pointer;
+            background-color: #eef2052d;
+        }
+        .item3:hover{
+            background-color: #eef20567 ;
+
+        }
+        .item4{
+            cursor: pointer;
+            background-color: #f28b0521;
+        }
+        .item4:hover{
+            background-color: #f28b053f ;
+
+        }
+        .item5{
+            cursor: pointer;
+            background-color: #d916040e;
+        }
+        .item5:hover{
+            background-color: #d9160423 ;
+
+        }
+    }
+}
+
+@media (width<1000px) {
+    section .products{
+        flex-direction: column;
+    }
+}
+
+section .products2{
+    flex-wrap: wrap;
+    margin-inline: 200px;
+    text-align: center;
+    margin-bottom: 100px;
+    div{
+        width: 33%;
+    }
+}
+
+@media (width<1200px) {
+    section .products2{
+        flex-direction: column;
+        margin-inline: auto;
+        text-align: center;
+    }
+}
+
+section.about{
+    width: 80%;
+    margin-inline: auto;
+    padding: 10px;
+    margin-bottom: 200px;
+    img{
+        border-radius: 40px;
+    }
+
+    .description{
+        margin-left: 20px;
+        padding: 10px;
+        h1{
+            color: orange;
+            margin-bottom: 20px;
+            font-size: 60px;
+            font-weight: 100;
+        }
+        
+        h4{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            
+        }
+    }
+}
+
+@media (width<900px) {
+    section.about{
+        flex-direction: column;
+
+        .description{
+            width: 50%;
+        }
+    }
+}

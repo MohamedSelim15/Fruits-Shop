@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:70px;
+    background-color: rgba(255, 255, 255, 0.703);
+    backdrop-filter: blur(30px);
+    width: 100%;
+    z-index: 1;
+    color: green;
+    position: fixed;
+}
+header .logo{
+    cursor: pointer;
+}
+header .logo i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+header .nav a{
+    margin-inline: 15px;
+    padding: 13px;
+    transition: all 0.1s ease;
+}
+
+header .nav a:hover{
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+}

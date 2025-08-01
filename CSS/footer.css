@@ -1,0 +1,30 @@
+footer {
+    background-color: #ffefdc;
+    color: black;
+    margin-top: 20px;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.footer{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer span{
+    color: green;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+footer .socialMedia a{
+    font-size: 1.1em;
+    padding: 0 15px 0 0;
+    color: green;
+}
+
+footer .socialMedia a:hover{
+    transform: scale(1.5);
+}
